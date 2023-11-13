@@ -26,7 +26,7 @@ for i in range(5):
     y = random.randrange(-200, 201)
     col = random.choice(colors)
     size = random.randrange(50, 200)
-    square([x, y ], col, size)
+    square([x, y], col, size)
     fred.screen.clear()
 
 fred.screen.exitonclick()   
