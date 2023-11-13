@@ -4,9 +4,9 @@ calc_state = "y"
 #loop for continuing being in the app
 while calc_state == "y":
     #input the numbers and symbols
-    number1 = int(input("Give first number: "))
-    number2 = int(input("Give second number: "))
-    symbol = input("Give symbol: ")
+    number1 = int(input("Give first number: \n"))
+    number2 = int(input("Give second number: \n"))
+    symbol = input("Give symbol: \n")
 
     #do the right action based on the symbol we gave
     if symbol == "+":
@@ -25,4 +25,4 @@ while calc_state == "y":
         print("Wrong symbol")
 
     #Ask id they want to continue being in the calculator
-    calc_state = input("Do you want to continue? Type y or n ")
+    calc_state = input("Do you want to continue? Type y or n \n")
