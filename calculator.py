@@ -21,6 +21,8 @@ while calc_state == "y":
         print(str(number1) + symbol + str(number2) + "= ", number1 // number2)
     elif symbol == "%":
         print(str(number1) + symbol + str(number2) + "= ", number1 % number2)
+    elif symbol == "**":
+        print(str(number1) + symbol + str(number2) + "= ", number1 ** number2)
     else:
         print("Wrong symbol. Try again")
         continue
