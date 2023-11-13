@@ -22,7 +22,8 @@ while calc_state == "y":
     elif symbol == "%":
         print(str(number1) + symbol + str(number2) + "= ", number1 % number2)
     else:
-        print("Wrong symbol")
+        print("Wrong symbol. Try again")
+        continue
 
     #Ask id they want to continue being in the calculator
     calc_state = input("Do you want to continue? Type y or n \n")
