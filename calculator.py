@@ -29,3 +29,6 @@ while calc_state == "y":
 
     #Ask id they want to continue being in the calculator
     calc_state = input("Do you want to continue? Type y or n \n")
+    if calc_state != "y" or calc_state != "n":
+        print("I dont understand. Try again")
+        calc_state = input("Do you want to continue? Type y or n \n")
