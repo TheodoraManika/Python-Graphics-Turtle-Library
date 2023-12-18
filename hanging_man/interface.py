@@ -20,8 +20,11 @@ def head(x, y, d):
     turtle.down()
     turtle.circle(d)   
 
-line(0, -540, 0 , 540)
-line(-640, 0, 640, 0)
+def menu(): pass
+
+def win(): pass
+
+def lose(): pass
 
 def draw_hanging_man():
     window = turtle.Screen()
@@ -53,4 +56,8 @@ def draw_hanging_man():
     window.mainloop()
 
 # Call the function to draw the hanging man
-draw_hanging_man()
+if __name__ == "__main__":
+    draw_hanging_man()
+    menu()
+    win()
+    lose()
