@@ -33,6 +33,14 @@ p2.shapesize(stretch_wid = 8, stretch_len = 2)
 p2.penup()
 p2.goto(350, 0)
 
+def p2_up():
+    y = p2.ycor()
+    p2.sety(y + 20)
+
+def p2_down():
+    y = p2.ycor()
+    p2.sety(y - 20)
+
 # Μπάλα
 ball= turtle.Turtle()
 ball.speed(0)
@@ -41,6 +49,13 @@ ball.color("blue")
 ball.shapesize(stretch_wid = 2, stretch_len = 2)
 ball.penup()
 ball.goto(0,0)
+
+#keyboard binding
+win.listen()
+win.onkeypress(p1_up, "w")
+win.onkeypress(p1_down, "s")
+win.onkeypress(p2_up, "Up")
+win.onkeypress(p2_down, "Down")
 
 # Game loop
 while True:
