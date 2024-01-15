@@ -49,6 +49,26 @@ ball.color("blue")
 ball.shapesize(stretch_wid = 2, stretch_len = 2)
 ball.penup()
 ball.goto(0,0)
+ball.dx = 2
+ball.dy = -2
+
+def move_ball():
+    ball.setx(ball.xcor() + ball.dx)
+    ball.sety(ball.ycor() + ball.dy)
+    #Border checking
+    if ball.ycor() > 290: 
+        ball.sety(290)
+        ball.dy *=-1
+    if ball.ycor() < -290: 
+        ball.sety(-290)
+        ball.dy *=-1
+    if ball.xcor() > 390:
+        ball.goto(0,0)
+        ball.dx *=-1
+    if ball.xcor() < -390:
+        ball.goto(0,0)
+        ball.dx *=-1
+
 
 #keyboard binding
 win.listen()
